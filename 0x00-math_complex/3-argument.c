@@ -8,6 +8,7 @@
 double argument(complex c)
 {
 	double argument;
+
 	argument = atan(c.im / c.re);
 	return (argument);
 }
