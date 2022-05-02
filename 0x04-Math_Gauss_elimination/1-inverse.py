@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 
-import  matplotlib.pyplot as plt
 import numpy as np
 gaussian_elimination = __import__('0-gaussian_elimination').gaussian_elimination
 
 if __name__ == "__main__":
 
-  # your code here
+  # Difine inverse function
+  def inverse(A):
+    inA = gaussian_elimination(A, B)
+    return inA
+
 
   A = np.zeros((4, 4))
   A[2, 0]=1
