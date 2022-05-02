@@ -7,6 +7,15 @@ if __name__ == "__main__":
 
   # Difine inverse function
   def inverse(A):
+    #add zeros to the matrix
+    #np.shape give the number of elements of A
+    B = np.zeros(np.shape(A))
+    j = np.shape(B)
+    i = 0
+    for i in range (0, j):
+      #put 1 across the matrix
+      #this create A'
+      B[i][i] = 1
     inA = gaussian_elimination(A, B)
     return inA
 
