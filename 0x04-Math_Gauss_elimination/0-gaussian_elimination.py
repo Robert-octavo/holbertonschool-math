@@ -8,3 +8,4 @@ def gaussian_elimination(A, b):
         return np.linalg.solve(A, b)
     except ZeroDivisionError:
         print("You can't divide by zero!")
+        return (None)
