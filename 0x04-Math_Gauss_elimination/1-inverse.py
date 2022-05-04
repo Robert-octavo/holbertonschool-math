@@ -10,9 +10,10 @@ if __name__ == "__main__":
     #add zeros to the matrix
     #np.shape give the number of elements of A
     B = np.zeros(np.shape(A))
-    j = np.shape(B)
+    #np.shape return two numbers for row and colunm
+    r, c = np.shape(A)
     i = 0
-    for i in range (0, j):
+    for i in range (0, c):
       #put 1 across the matrix
       #this create A'
       B[i][i] = 1
