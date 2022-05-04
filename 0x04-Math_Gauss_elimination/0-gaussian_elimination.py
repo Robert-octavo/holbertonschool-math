@@ -6,5 +6,5 @@ def gaussian_elimination(A, b):
 #numpy.linalg.solve to Solve a linear matrix equation
     try:
         return np.linalg.solve(A, b)
-    except LinAlgError:
+    except ZeroDivisionError:
         print("You can't divide by zero!")
